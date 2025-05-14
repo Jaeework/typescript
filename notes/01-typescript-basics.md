@@ -354,7 +354,7 @@ user.greet();
 혼자 사용되기보다는 유니언 타입으로 사용됨
 
 ```typescript
-let a = null | string;
+let a : null | string;
 
 a = null;
 
@@ -363,7 +363,7 @@ a = 'Hi!';
 
 ```typescript
 // form.js
-const inputEl = document.getElementById('user-name'); // null 또는 HTMLElemnet를 반환
+const inputEl = document.getElementById('user-name'); // null 또는 HTMLElement를 반환
 
 if(!inputEl){
     throw new Error('Element not found!');
@@ -391,7 +391,7 @@ console.log(inputEl?.value);
 
 ### Type Casting
 
-유형 어설션이라고도 함.
+Type Assertion(타입 단언) 이라고도 함.
 
 어떤 유형을 다른 유형으로 변환하는 것.
 
